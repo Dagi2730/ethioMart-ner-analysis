@@ -44,14 +44,11 @@ cd ethioMart-ner-analysis
 Install dependencies
 
 bash
-Copy
-Edit
+
 pip install -r requirements.txt
 Set up .env for Telegram API
 
-ini
-Copy
-Edit
+```
 API_ID=your_api_id
 API_HASH=your_api_hash
 PHONE_NUMBER=+2519xxxxxxx
