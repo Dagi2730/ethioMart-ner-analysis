@@ -18,19 +18,17 @@ EthioMart aims to centralize e-commerce activity on Telegram in Ethiopia. This p
 
 ## 📁 Folder Structure
 
+```
 ethioMart-ner-analysis/
-├── ingestion/ # Telegram scraping scripts
-├── data/ # Collected raw & labeled data
-├── models/ # Trained/fine-tuned models
-├── notebooks/ # Jupyter notebooks (exploration/training)
-├── reports/ # Final report & interim summary
+├── ingestion/             # Telegram scraping scripts
+├── data/                  # Collected raw & labeled data
+├── models/                # Trained/fine-tuned models
+├── notebooks/             # Jupyter notebooks (exploration/training)
+├── reports/               # Final report & interim summary
 ├── README.md
 ├── requirements.txt
 └── main.py
-
-yaml
-Copy
-Edit
+```
 
 ---
 
@@ -41,33 +39,50 @@ Edit
 ```bash
 git clone https://github.com/Dagi2730/ethioMart-ner-analysis.git
 cd ethioMart-ner-analysis
-Install dependencies
-
-bash
-
-pip install -r requirements.txt
-Set up .env for Telegram API
-
 ```
+
+2. **Install dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+3. **Set up `.env` file for Telegram API**
+
+Create a file named `.env` and add your credentials:
+
+```ini
 API_ID=your_api_id
 API_HASH=your_api_hash
 PHONE_NUMBER=+2519xxxxxxx
-📊 Tasks Overview
-Task	Description
-✅ Task 1	Ingest and preprocess Amharic Telegram messages
-⏳ Task 2	Label Amharic NER dataset in CoNLL format
-⏳ Task 3	Fine-tune and evaluate NER models
-⏳ Task 4	Compare XLM-R, DistilBERT, and mBERT models
-⏳ Task 5	Use SHAP/LIME to interpret model predictions
-⏳ Task 6	Generate Vendor Scorecards for micro-lending
+```
 
-👩‍💻 Tech Stack
-Python 3.10+
+---
 
-Telethon – for Telegram scraping
+## 📊 Tasks Overview
 
-Hugging Face Transformers – for model training
+| Task      | Description                                           |
+|-----------|-------------------------------------------------------|
+| ✅ Task 1 | Ingest and preprocess Amharic Telegram messages       |
+| ⏳ Task 2 | Label Amharic NER dataset in CoNLL format              |
+| ⏳ Task 3 | Fine-tune and evaluate NER models                     |
+| ⏳ Task 4 | Compare XLM-R, DistilBERT, and mBERT models            |
+| ⏳ Task 5 | Use SHAP/LIME to interpret model predictions           |
+| ⏳ Task 6 | Generate Vendor Scorecards for micro-lending          |
 
-Pandas, SpaCy – for data handling
+---
 
-SHAP, LIME – for model interpretability
+## 👩‍💻 Tech Stack
+
+- **Python 3.10+**
+- **Telethon** – for Telegram scraping
+- **Hugging Face Transformers** – for model training
+- **Pandas, SpaCy** – for data handling
+- **SHAP, LIME** – for model interpretability
+
+---
+
+
+## 🙌 Acknowledgments
+
+Cohort: 10 Academy Week 4 – EthioMart NER Team
