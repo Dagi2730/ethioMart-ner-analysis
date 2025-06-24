@@ -108,3 +108,33 @@ Thumbs.db
 *.tmp
 *.swp
 
+# Ignore Telegram session files
+*.session
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+
+# Session files (Telethon)
+*.session
+*.session-journal
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Data files
+data/messages.csv
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+
